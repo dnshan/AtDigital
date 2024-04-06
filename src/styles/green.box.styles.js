@@ -17,7 +17,7 @@ export const GreenBoxStyle = styled.div`
     @media (max-width: 768px) {
       position: static;
     width: 100%;
-    margin: 0px; // Adjusting margin to keep the bottom and top margins when width is 100%
+    margin: 0px; 
     }
 
   h4{
@@ -30,9 +30,4 @@ export const GreenBoxStyle = styled.div`
     margin: 10px;
 
   }
-  //background: linear-gradient(to bottom, #33ccff, #ff99cc);
-  //#1CBDDD
-  //#4DCA79
-
-
 `;

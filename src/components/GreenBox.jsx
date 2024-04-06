@@ -16,4 +16,4 @@ function GreenBox() {
     )
 }
 
-export default GreenBox
+export default GreenBox;

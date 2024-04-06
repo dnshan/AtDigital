@@ -11,13 +11,13 @@ export const FooterContainer = styled.footer`
 
 export const UpperContainer = styled.div`
   display: flex;
-  flex-direction: row; /* Aligns the three containers side by side */
-  justify-content: space-around; /* Adjust as needed for spacing */
+  flex-direction: row; 
+  justify-content: space-around; 
   width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center; // Center align items for smaller screens
+    align-items: center; 
   }
 `;
 
@@ -53,30 +53,21 @@ color: white;
   margin: 0px 35px 0px ;
 `;
 
-// export const TextContainer = styled.header`
-//   display: flex;
-//   flex-direction:column ;
-
-// `;
-
-
 export const LowerContainer = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center children horizontally */
-  width: 100%; /* Ensure it spans the full width */
+  align-items: center; 
+  width: 100%; 
   color: white;
-  margin: 10px 0; /* Adjust as needed */
+  margin: 10px 0; 
 `;
 
-
-
 export const HorizontalLine = styled.div`
-  width: 100%; /* Temporarily set to 100% to test visibility */
-  max-width: 600px; /* Adjust based on your layout's maximum width */
+  width: 100%;
+  max-width: 600px;
   height: 2px;
   background-color: white;
-  margin: 0 auto; /* Center the line */
+  margin: 0 auto; 
 `;
 
 

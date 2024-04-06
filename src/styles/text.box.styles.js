@@ -20,9 +20,9 @@ Button{
 
 @media (max-width: 375px) {
     Button {
-      align-self: center; /* Center the button in the flex container */
-      width: auto; /* Adjust the width as needed */
-      /* Additional styling for the button at smaller screen sizes */
+      align-self: center; 
+      width: auto; 
+      
     }
 }
 

@@ -7,8 +7,8 @@ function TextBox({ title, children }) {
             <h3>{title}</h3>
             <h6>{children}</h6>
             <Button onClick={() => console.log('Button clicked!')}>
-                    Learn More
-                </Button>
+                Learn More
+            </Button>
         </TextBoxStyles>
     );
 }

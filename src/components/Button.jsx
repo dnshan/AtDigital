@@ -1,5 +1,5 @@
 import React from 'react';
-import { ButtonStyle } from '../styles/button.styles'; // Adjust the path as necessary
+import { ButtonStyle } from '../styles/button.styles'; 
 
 const Button = ({ children, onClick, type = 'button', disabled = false }) => {
   return (

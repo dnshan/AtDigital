@@ -9,12 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100%;
     box-sizing: border-box;
   }
-  /* *, *:before, *:after {
-    box-sizing: inherit;
-  } */
 `;
-
-
 
 export const HeaderContainer = styled.header`
   background-color: #6B3CC9;
@@ -36,7 +31,6 @@ export const LogoStyle = styled.img`
 export const Image01Style = styled.img`
   width: 100%;
   height: auto;
-  /* margin: 10px; */
 `;
 
 export const Image02Style = styled.img`
@@ -56,13 +50,13 @@ width: 100%;
 export const SecondContainer = styled.div`
   position: relative;
   display: flex;
-  flex-direction: row; // Default to row, but will change to column on smaller screens
+  flex-direction: row; 
   justify-content: center;
-  align-items: flex-start; // Align items at the start of the container
+  align-items: flex-start; 
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center; // Center align items for smaller screens
+    align-items: center; 
   }
 `;
 
@@ -75,7 +69,6 @@ width: 100%;
 max-width: 700px;
 margin: 20px auto;
 
-  /* Media query for screens smaller than 375px */
   @media (max-width: 375px) {
     flex-direction: column;
     align-items: center;
@@ -91,7 +84,6 @@ width: 100%;
 max-width: 700px;
 margin: 20px auto;
 
-  /* Media query for screens smaller than 375px */
   @media (max-width: 375px) {
     flex-direction: column;
     & > img {

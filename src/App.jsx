@@ -8,23 +8,19 @@ import Footer from './components/Footer';
 import {
   HeaderContainer,
   SecondContainer,
+  ThirdContainer,
+  FourthContainer,  
+  BackgroundContainer,
   LogoStyle,
   Image01Style,
-  ThirdContainer,
-  FourthContainer,
   Image02Style,
   Image03Style,
-  BackgroundContainer,
   GlobalStyle
 } from './styles/main.page.styles';
 import logo from './assets/logo.png';
 import image01 from './assets/image01.png';
 import image02 from './assets/image02.png';
 import image03 from './assets/image03.png';
-
-
-
-import Page from './Page';
 
 function App() {
   return (
