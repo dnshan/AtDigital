@@ -1,15 +1,22 @@
-import React from 'react';
-import { StyledNav, NavLinks, NavLink } from '../styles/navbar.styles'
+import React, { useState } from 'react';
+import { StyledNav, NavLinks, NavLink, HamburgerIcon, MobileNavContainer } from '../styles/navbar.styles';
 
 function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <StyledNav>
-            <NavLinks>
-                <li><NavLink href="/">Home</NavLink></li>
-                <li><NavLink href="/about">About</NavLink></li>
-                <li><NavLink href="/services">Services</NavLink></li>
-                <li><NavLink href="/contact">Contact</NavLink></li>
-            </NavLinks>
+            <HamburgerIcon onClick={() => setIsOpen(!isOpen)}>
+                ☰
+            </HamburgerIcon>
+            <MobileNavContainer isOpen={isOpen}>
+                <NavLinks>
+                    <li><NavLink href="/">Home</NavLink></li>
+                    <li><NavLink href="/about">About</NavLink></li>
+                    <li><NavLink href="/services">Services</NavLink></li>
+                    <li><NavLink href="/contact">Contact</NavLink></li>
+                </NavLinks>
+            </MobileNavContainer>
         </StyledNav>
     );
 }

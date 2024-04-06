@@ -1,11 +1,14 @@
 import {
     FooterContainer,
     UpperContainer,
+    LeftContainer,
+    RightContainer,
     HorizontalLine,
     MiddleContainer,
     LowerContainer,
     TechList,
-    TextContainer
+    LowerWrapper
+
 } from "../styles/footer.styles"
 import logo from '../assets/logo.png';
 import { LogoStyle } from "../styles/main.page.styles";
@@ -15,44 +18,43 @@ function Footer() {
         <>
             <FooterContainer>
                 <UpperContainer>
+                <LeftContainer>
                     <LogoStyle src={logo} alt="AT Digital Logo" />
-                    <h3 className="b">Our Technologies</h3>
-                    <h3 className="c">Our Services</h3>
-
-                </UpperContainer>
+                    <h5> Your goal is our target. Not anything in between.
+                        We use online marketing platforms and tools to achieve
+                        single objective - your business results.</h5>
+                </LeftContainer>
+                
+                <LowerWrapper>
 
                 <MiddleContainer>
-                    <TextContainer>
-
-                    <h5> Your goal is our target. Not anything in between.</h5>
-                    <h5>   We use online marketing platforms and tools to</h5>
-                    <h5>     achieve single objective - your business results.</h5>
-
-                    </TextContainer>
+                    <h3 >Our Technologies</h3>
                     <TechList>
                         <li>ReactJS</li>
                         <li>Gatsby</li>
                         <li>NextJS</li>
                         <li>NodeJS</li>
                     </TechList>
+                </MiddleContainer>
 
-
+                <RightContainer>
+                    <h3 className="c">Our Services</h3>
                     <TechList>
                         <li>Social media Marketing</li>
                         <li>Web & Mobile App Development</li>
                         <li>Data & Analytics</li>
                     </TechList>
+                </RightContainer>
+                </LowerWrapper>
 
-                </MiddleContainer>
+                </UpperContainer>
 
-
-                <HorizontalLine className="g" />
                 <LowerContainer>
-                    <h4 className="h">
+                <HorizontalLine/>
+                    <h4>
                         Privacy Policy | Terms & Conditions
                     </h4>
                 </LowerContainer>
-
             </FooterContainer>
 
         </>

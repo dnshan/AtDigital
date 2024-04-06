@@ -13,7 +13,9 @@ import {
   ThirdContainer,
   FourthContainer,
   Image02Style,
+  Image03Style,
   BackgroundContainer,
+  GlobalStyle
 } from './styles/main.page.styles';
 import logo from './assets/logo.png';
 import image01 from './assets/image01.png';
@@ -27,6 +29,7 @@ import Page from './Page';
 function App() {
   return (
     <>
+    <GlobalStyle/>
       <HeaderContainer>
         <LogoStyle src={logo} alt="AT Digital Logo" />
         <Navbar />
@@ -56,7 +59,7 @@ function App() {
             different intents shown by your potential customers who interact with your
             business online.
           </TextBox>
-          <Image02Style src={image03} alt="Image 02" />
+          <Image03Style src={image03} alt="Image 02" />
         </FourthContainer>
 
         <Expandable title="What is Webflow and why is it the best website builder?">

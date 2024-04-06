@@ -1,4 +1,20 @@
 import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+  /* *, *:before, *:after {
+    box-sizing: inherit;
+  } */
+`;
+
+
 
 export const HeaderContainer = styled.header`
   background-color: #6B3CC9;
@@ -16,72 +32,80 @@ export const LogoStyle = styled.img`
   margin: 10px;
 `;
 
-export const SecondContainer = styled.div`
-  /* display: flex;
-  flex-direction:row ; */
-  position: relative;
-
-`;
 
 export const Image01Style = styled.img`
   width: 100%;
-  height: 500px;
+  height: auto;
   /* margin: 10px; */
 `;
 
 export const Image02Style = styled.img`
-  width: 300px;
-  height: 300px;
-  /* margin: 10px; */
-
+width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
 `;
 
-// export const Image03Style = styled.img`
-//   width: 300px;
-//   height: 300px;
-//   /* margin: 10px; */
-// `;
+export const Image03Style = styled.img`
+width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+`;
+
+export const SecondContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row; // Default to row, but will change to column on smaller screens
+  justify-content: center;
+  align-items: flex-start; // Align items at the start of the container
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center; // Center align items for smaller screens
+  }
+`;
 
 
 export const ThirdContainer = styled.div`
 display: flex;
 flex-direction: row;
-align-items: center;
-width: 700px;
-margin-bottom: 20px;
+align-items: stretch;
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
 
-/* display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: 
-"a b"
-"a c"
-"a c"
+  /* Media query for screens smaller than 375px */
+  @media (max-width: 375px) {
+    flex-direction: column;
+    align-items: center;
 
-h3{
-  grid-area: b;
-}
-
-h6{
-  grid-area: c;
-} */
-
-`;
-
-export const BackgroundContainer = styled.div`
-  display: flex;
-  flex-direction:column ;
-  align-items: center;
-
+  }
 `;
 
 export const FourthContainer = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
-width: 700px;
-margin-bottom: 20px;
+width: 100%;
+max-width: 700px;
+margin: 20px auto;
 
-
+  /* Media query for screens smaller than 375px */
+  @media (max-width: 375px) {
+    flex-direction: column;
+    & > img {
+      order: -1;
+    }
+  }
 `;
+
+export const BackgroundContainer = styled.div`
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+`;
+
+
 
 
